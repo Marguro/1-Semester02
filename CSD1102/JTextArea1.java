@@ -1,3 +1,4 @@
+package CSD1102;
 import javax.swing.JFrame; 
 import javax.swing.JScrollPane; 
 import javax.swing.JTextArea;
@@ -7,9 +8,9 @@ public class JTextArea1 {
         JFrame myFrame = new JFrame(); 
         myFrame.setLayout(null);
         JTextArea textarea = new JTextArea();
-        textarea.setText("Swing");
-        textarea.append(" JTextArea");
-        textarea.insert("Java", 0);
+        textarea.setText("You can text ");
+        textarea.append("something here.");
+        textarea.insert("Attention! ", 0);
         JScrollPane textareaScroll = new JScrollPane(textarea); 
         textareaScroll.setLocation(10, 10);
         textareaScroll.setSize(240, 120);

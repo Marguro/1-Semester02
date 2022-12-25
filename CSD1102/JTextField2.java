@@ -1,9 +1,8 @@
+package CSD1102;
 import java.awt.event.ActionEvent; 
 import java.awt.event.ActionListener; 
 import javax.swing.JButton; 
 import javax.swing.JFrame; 
-import javax.swing.JLabel; 
-import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
     public class JTextField2 implements ActionListener {
@@ -13,7 +12,7 @@ import javax.swing.JTextField;
     JTextField2() {
         JFrame f = new JFrame();
         f.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE); 
-        f.setTitle("CSD1102 การโปรแกรมคอมพิวเตอร์ชั้นสูง");
+        f.setTitle("โปรแกรมคูณ/หารเลข");
         tf1 = new JTextField(); 
         tf1.setBounds(50, 50, 150, 20);
         tf2 = new JTextField(); 
@@ -21,9 +20,9 @@ import javax.swing.JTextField;
         tf3 = new JTextField(); 
         tf3.setBounds(50, 150, 150, 20); 
         tf3.setEditable(false);
-        b1 = new JButton("+");
+        b1 = new JButton("x");
         b1.setBounds(50, 200, 50, 50); 
-        b2 = new JButton("-"); 
+        b2 = new JButton("÷");
         b2.setBounds(120, 200, 50, 50);
         b1.addActionListener((java.awt.event.ActionListener) this);
         b2.addActionListener((java.awt.event.ActionListener) this);
@@ -43,9 +42,9 @@ import javax.swing.JTextField;
         int b = Integer.parseInt(s2); 
         int c = 0;
         if (e.getSource() == b1) {
-            c = a + b;
+            c = a * b;
         } else if (e.getSource() == b2) { 
-            c = a - b;
+            c = a / b;
         }
     String result = String.valueOf(c); 
     tf3.setText(result);

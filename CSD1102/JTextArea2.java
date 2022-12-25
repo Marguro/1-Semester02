@@ -1,3 +1,4 @@
+package CSD1102;
 import java.awt.event.ActionEvent; 
 import java.awt.event.ActionListener; 
 import javax.swing.JButton; 
@@ -16,7 +17,7 @@ import javax.swing.JTextArea;
         l2 = new JLabel();
         l2.setBounds(160, 25, 100, 30); 
         area = new JTextArea(); 
-        area.setBounds(20, 75, 250, 200); 
+        area.setBounds(20, 75, 250, 150); 
         b = new JButton("Count Words"); 
         b.setBounds(100, 300, 120, 30); 
         b.addActionListener(this);
@@ -24,15 +25,15 @@ import javax.swing.JTextArea;
         f.add(l2);
         f.add(area);
         f.add(b);
-        f.setSize(450, 450);
+        f.setSize(300, 420);
         f.setLayout(null);
         f.setVisible(true);
 }
     public void actionPerformed (ActionEvent e) { 
         String text = area.getText();
         String words[] = text.split("\\s"); 
-        l1.setText("Words: " + words.length);
-        l2.setText("Characters: " + text.length());
+        l1.setText("Words : " + words.length);
+        l2.setText("Characters : " + text.length());
 }
     public static void main(String[] args) {
         new JTextArea2();

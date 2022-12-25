@@ -1,3 +1,4 @@
+package CSD1102;
 import java.awt.event.ActionEvent; 
 import java.awt.event.ActionListener; 
 import javax.swing.JButton; 
@@ -11,12 +12,12 @@ public class JTextArea3 implements ActionListener {
     JButton b;
     JTextArea3() {
         JFrame f = new JFrame();
-        f.setTitle("การโปรแกรมคอมพิวเตอร์ชั่นสูง");
+        f.setTitle("โปรแกรมทักทายคุณ 2.0");
         l1 = new JLabel();
         l1.setBounds(100, 200, 100, 30);
         area = new JTextArea(); 
         area.setBounds(100, 50, 130, 50); 
-        b = new JButton("Button"); 
+        b = new JButton("Click here!"); 
         b.setBounds(100, 130, 120, 30); 
         b.addActionListener(this);
         f.add(l1);
@@ -27,7 +28,7 @@ public class JTextArea3 implements ActionListener {
         f.setVisible(true);
 }
     public void actionPerformed (ActionEvent e) {
-        l1.setText("Hello" + area.getText()); 
+        l1.setText("Hi : " + area.getText()); 
         for (String line : area.getText().split("\\n")) { 
             System.out.println(line);
 }

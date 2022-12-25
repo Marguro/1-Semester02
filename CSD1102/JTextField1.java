@@ -1,3 +1,4 @@
+package CSD1102;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
@@ -16,7 +17,7 @@ public class JTextField1 extends JFrame implements ActionListener {
 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setBounds(100,100,362,249);
-        setTitle("CSD1102 การโปรแกรมคอมพิวเตอร์");
+        setTitle("โปรแกรมทักทายคุณ!!");
         getContentPane().setLayout(null);
 
         final JTextField txt = new JTextField();
@@ -31,7 +32,7 @@ public class JTextField1 extends JFrame implements ActionListener {
         JButton btn1 = new JButton("Click");
         btn1.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent e) {
-                lbl.setText("Hello : "+txt.getText());
+                lbl.setText("Hi : "+txt.getText());
             }
         });
         btn1.setBounds(128,72,99,23);

@@ -1,3 +1,4 @@
+package CSD1102;
 import javax.swing.*; 
 import java.awt.event.*;
     public class Ex001 extends JFrame { 
